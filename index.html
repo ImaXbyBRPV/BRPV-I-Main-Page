@@ -15,20 +15,23 @@
             <img class="small-logo" src="https://media.discordapp.net/attachments/1122238473018036274/1133376150798868590/Borderrpppp.png?width=460&height=457">
             <a href="#">Main</a>
             <a href="https://imaxbybrpv.github.io/BRPV-Promo-Codes123/">Promo Codes</a>
-            <a href="https://imaxbybrpv.github.io/BRPV-Shop/">Shop</a>
+            <a href="#">Shop</a>
             <a href="file:///C:/Users/T.K/Desktop/BorderRP/earnEconomy.html">Earn Economy</a>
             <p class="Economy" id="Economy">Economy Cash: 0</p>
         </div>
+        <p class="HelloUser" id="User"></p>
 
         <p class="txt1">Border I President I Virus I Normal Roleplay</p>
 
-        <button id="btn1">Support</button>
+        <button id="btn1" onclick="window.location.href = 'https://imaxbybrpv.github.io/BRPV-Sign-Up/'">Sign Up</button>
         <button id="btn2">Play Now</button>
     </div>
 
     <script>
-        let economyCash = parseInt(localStorage.getItem('economyCash')) || 0;
-    document.getElementById("Economy").textContent = 'Economy Cash: ' + economyCash;
+        let economyCash = parseInt(localStorage.getItem('economyCash'));
+        document.getElementById("Economy").textContent = 'Economy Cash: ' + economyCash;
+
+        document.getElementById("User").textContent = "Hello " + localStorage.getItem("username");
     </script>
 </body>
 </html>
